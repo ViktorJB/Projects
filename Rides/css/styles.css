@@ -1,0 +1,28 @@
+body{
+	background-image: url(../img/abstract-blue.png);
+}
+
+#box{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
+    background: rgba(200, 200, 200, 0.1);
+    border-radius: 4px;
+    margin-top: 10%;
+  /*  margin-top: 10%;
+    margin-left: 33%;
+    margin-bottom: 5%; */
+}
+b{
+	text-align: center;
+	color: #b1b9bd;
+}
+div.panel.panel-default{
+	margin-top: 5%;
+}
+.image{
+	text-align: center;
+	margin-top: 3%;
+}
+img{
+	width:40%;
+}
+
