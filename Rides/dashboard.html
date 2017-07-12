@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Costa Rica Rides</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" >
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="col-sm-12 col-md-12 col-lg-12">
+			<div id="welcome" class="col-sm-11 col-md-11 col-lg-11">
+				<span class="welcome-user">Welcome!&nbsp; </span>
+				<span class="user-logged"><i class="glyphicon glyphicon-user" aria-hidden="true"></i></span>
+			</div>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="col-sm-12 col-md-12 col-lg-12">
+			<div class="main-image">
+				<img id="main-img" src="./img/share-car.png">
+			</div>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div id="dashboard-main" class="container-fluid">
+			<div class="row-fluid">
+				<div id="bar" class="col-sm-4 col-md-4 col-lg-4">
+					<nav class="navbar navbar-default">
+						<ul class="nav navbar-nav">
+					   		<li><a href="dashboard.html">Dashboard</a></li>
+					   		<li><a href="index.html">Rides</a></li>
+					   		<li><a href="settings.html">Settings</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div id="main-head" class="col-sm-10 col-md-10 col-lg-10">
+					<h1 class="title-db">Dashboard</h1>
+					<br>
+					<a href="dashboard.html" class="menu-right">Dasboard<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
+					<br>
+					<h4>My Rides</h4>
+				</div>
+			</div>
+			<div class="row-fluid">
+				<div id="dashboard-info" class="container-fluid">
+					<div class="row-fluid">
+						<div class="col-sm-4 col-md-4 col-lg-4">
+							<br>
+							<span class="glyphicon glyphicon-th-list" aria-hidden="true">&nbsp;Your current list of rides</span>
+						</div>
+						<div id="dashboard-add" class="col-sm-8 col-md-8 col-lg-8">
+							<br>
+							<a href="rides_add.html">
+								<button type="button" class="btn btn-info"><span class="glyphicon glyphicon-plus"></span>&nbsp;Add Ride</button>
+							</a>
+						</div>
+					</div>
+					<div class="row-fluid">
+						<div class="col-sm-12 col-md-12 col-lg-12">
+							<div class="table-responsive">
+								<br>
+								<table class="table table-bordered">
+							    	<thead>
+							      		<tr>
+							        		<th>Name</th>
+									        <th>Start</th>
+									        <th>End</th>
+									        <th>Actions</th>
+							      		</tr>
+							    	</thead>
+							    	<tbody>
+							      		<tr>
+							        		<td>Casa</td>
+							        		<td>Las Delicias</td>
+							        		<td>Aguas Zarcas</td>
+							        		<td>
+							        			<span><a class="glyphicon glyphicon-edit" href="rides_edit.html" target="_parent">&nbsp;Edit</a>&nbsp; <a class="glyphicon glyphicon-trash">&nbsp;Delete</a></span>
+							        		</td>
+							      		</tr>
+							      		<tr>
+							        		<td>Oficina</td>
+							        		<td>Banco Nacional, Aguas Zarcas</td>
+							        		<td>Las Delicias</td>
+							        		<td>
+							        			<span><a class="glyphicon glyphicon-edit" href="rides_edit.html" target="_parent">&nbsp;Edit</a>&nbsp; <a class="glyphicon glyphicon-trash">&nbsp;Delete</a></span>
+							        		</td>
+							      		</tr>
+							      		<tr>
+							        		<td>Universidad</td>
+							        		<td>Las Delicias</td>
+							        		<td>Ciudad Quesada</td>
+							        		<td>
+							        			<span><a class="glyphicon glyphicon-edit" href="rides_edit.html" target="_parent">&nbsp;Edit</a>&nbsp; <a class="glyphicon glyphicon-trash">&nbsp;Delete</a></span>
+							        		</td>
+							      		</tr>
+							      		<tr>
+							        		<td>Casa Descanso</td>
+							        		<td>Las Delicias</td>
+							        		<td>Fortuna</td>
+							        		<td>
+							        			<span><a class="glyphicon glyphicon-edit" href="rides_edit.html" target="_parent">&nbsp;Edit</a>&nbsp; <a class="glyphicon glyphicon-trash">&nbsp;Delete</a></span>
+							        		</td>
+							      		</tr>
+							    	</tbody>
+							  	</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
