@@ -9,24 +9,32 @@
 </head>
 <body>
 <div class="container-fluid">
-	<div class="row-fluid">
+	<div class="row">
 		<div class="col-sm-12 col-md-12 col-lg-12">
-			<div id="welcome" class="col-sm-11 col-md-11 col-lg-11">
-				<span class="welcome-user">Welcome!&nbsp; </span>
-				<span class="user-logged"><i class="glyphicon glyphicon-user" aria-hidden="true"></i></span>
+			<div id="user-log-out" class="col-sm-11 col-md-11 col-lg-11">
+				<a href="login.html" class="welcome-user">Log out&nbsp; <span><i class="glyphicon glyphicon-log-out" aria-hidden="true"></i></span></a>
 			</div>
 		</div>
 	</div>
-	<div class="row-fluid">
+	<div class="row">
+		<div class="col-sm-12 col-md-12 col-lg-12">
+			<div id="welcome-rides-add" class="col-sm-11 col-md-11 col-lg-11">
+				<span class="user-logged"><i class="glyphicon glyphicon-user" aria-hidden="true"></i></span>
+				<span class="welcome-user">&nbsp; Welcome!</span>
+				<p id="name-user-rides-add"></p>
+			</div>
+		</div>
+	</div>
+	<div class="row">
 		<div class="col-sm-12 col-md-12 col-lg-12">
 			<div class="main-image">
-				<img id="main-img" src="./img/share-car.png">
+				<img class="main-img-rides-add" src="./img/share-car.png">
 			</div>
 		</div>
 	</div>
-	<div class="row-fluid">
+	<div class="row">
 		<div id="rides-main" class="container-fluid">
-			<div class="row-fluid">
+			<div class="row">
 				<div id="bar" class="col-sm-4 col-md-4 col-lg-4">
 					<nav class="navbar navbar-default">
 						<ul class="nav navbar-nav">
@@ -37,26 +45,26 @@
 					</nav>
 				</div>
 			</div>
-			<div class="row-fluid">
-				<div id="main-head" class="col-sm-12 col-md-12 col-lg-12">
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-12 main-head ">
 					<h1 class="title-db-st">Rides</h1>
 					<br>
 					<span id="finish-line"><a href="dashboard.html" class="menu-right">Dasboard<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a><a href="index.html" class="menu-right">&nbsp;Rides<span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a><span>&nbsp;Add</span></span>
 				</div>
 			</div>
 			<br>
-			<div class="row-fluid">
+			<div class="row">
 				<div id="rides-info" class="container-fluid">
-					<div class="row-fluid">
+					<div class="row">
 						<div id="pnl-rides" class="col-sm-12 col-md-12 col-lg-12">
 							<br>
 							<form class="form">
 								<div class="form-group">
 									<div id="pnl-start-end" class="container-fluid">
-										<div class="row-fluid">
+										<div class="row">
 											<div id="pnl-lbl-start" class="col-sm-12 col-md-12 col-lg-12">
 												<div class="container-fluid">
-													<div class="row-fluid">
+													<div class="row">
 														<div class="col-sm-12 col-md-12 col-lg-12">
 															<span class="f-name">Ride Name</span>
 											    			<input id="input-name-rides" type="text" class="form-control" required="">	
@@ -69,37 +77,45 @@
 						  		</div>
 						  		<div class="form-group">
 						  			<div id="pnl-start-end" class="container-fluid">
-						  				<div class="row-fluid">
+						  				<div class="row">
 						  					<div id="pnl-lbl-start" class="col-sm-6 col-md-6 col-lg-6">
 						  						<div class="container-fluid">
-							  						<div class="row-fluid">
+							  						<div class="row">
 							  							<div class="col-sm-11 col-md-11 col-lg-11">
 							  								<label>Start</label>
 							  							</div>
 							  						</div>
-							  						<div class="row-fluid">
-							  							<div class="col-sm-10 col-md-10 col-lg-10">
-							  								<input id="input-start" type="text" class="form-control" required="">
-							  							</div>
-							  							<div id="pnl-btn-info-list" class="col-sm-1 col-md-1 col-lg-1">
-							  								<button type="button" class="btn btn-info"><span class="glyphicon glyphicon-th-list"></span></button>
+							  						<div class="row">
+							  							<div class="col-sm-10 col-md-10 col-lg-10">							
+							  								<input id="ride-start" class="list-b" list="browsers">
+															<datalist class="browsers">
+															  <option value="Santa Ana">
+															  <option value="Escazu">
+															  <option value="Curridabat">
+															  <option value="San Jose">
+															  <option value="Alajuela">
+															</datalist>
 							  							</div>
 							  						</div>
 						  						</div>
 						  					</div>
 							  				<div id="pnl-lbl-start" class="col-sm-6 col-md-6 col-lg-6">
 						  						<div class="container-fluid">
-							  						<div class="row-fluid">
+							  						<div class="row">
 							  							<div class="col-sm-11 col-md-11 col-lg-11">
 							  								<label>End</label>
 							  							</div>
 							  						</div>
-							  						<div class="row-fluid">
+							  						<div class="row">
 							  							<div class="col-sm-10 col-md-10 col-lg-10">
-							  								<input id="input-start" type="text" class="form-control" required="">
-							  							</div>
-							  							<div id="pnl-btn-info-list" class="col-sm-1 col-md-1 col-lg-1">
-							  								<button type="button" class="btn btn-info"><span class="glyphicon glyphicon-th-list"></span></button>
+							  								<input id="ride-end" class="list-b" list="browsers">
+															<datalist class="browsers">
+															  <option value="Ciudad Quesada">
+															  <option value="San Ramon">
+															  <option value="Zarcero">
+															  <option value="Limon">
+															  <option value="Puntarenas">
+															</datalist>
 							  							</div>
 							  						</div>
 						  						</div>
@@ -110,10 +126,10 @@
 								</div>
 								<div class="form-group">
 									<div id="pnl-start-end" class="container-fluid">
-										<div class="row-fluid">
+										<div class="row">
 											<div id="pnl-lbl-start" class="col-sm-12 col-md-12 col-lg-12">
 												<div class="container-fluid">
-													<div class="row-fluid">
+													<div class="row">
 														<div class="col-sm-12 col-md-12 col-lg-12">
 														   	<label class="a-me">Description</label>
 														   	<textarea id="txt-description" class="form-control" rows="4" required=""></textarea>		
@@ -127,37 +143,39 @@
 								<div class="form-group">
 									<hr>
 									<div id="pnl-main-schedule" class="container-fluid">
-										<div class="row-fluid">
+										<div class="row">
 											<div id="pnl-lbl-start" class="col-sm-12 col-md-12 col-lg-12">
 												<div id="pnl-schedule" class="container-fluid">
 													<label class="lbl-time">When</label>
-													<div class="row-fluid">
+													<div class="row">
 														<div id="pnl-time" class="col-sm-6 col-md-6 col-lg-6">
 															<label class="lbl-time">Departure</label>
-															<input type="" name="hour-departure" class="form-control" required="">
+															<input type="" id="hour-departure" class="form-control" required="">
 															<br>
 															<label class="lbl-arrival">Estimated Arrival</label>
-															<input type="" name="arrival" class="form-control" required="">
+															<input type="" id="arrival" class="form-control" required="">
 														</div>
 														<div id="pnl-days" class="col-sm-6 col-md-6 col-lg-6">
-															<label>Select Days</label>
-															<br>
-															<input type="checkbox" value="">Monday
-															<br>
-															<input type="checkbox" value="">Tuesday
-															<br>
-															<input type="checkbox" value="">Wednesdat
-															<br>
-															<input type="checkbox" value="">Thursday
-															<br>
-															<input type="checkbox" value="">Fryday
-															<br>
-															<input type="checkbox" value="">Saturday
-															<br>
-															<input type="checkbox" value="">Sunday
+															<form id="days-list">
+																<label>Select Days</label>
+																<br>
+																<input type="checkbox" name="checkbox[]" value="">Monday
+																<br>
+																<input type="checkbox" name="checkbox[]" value="">Tuesday
+																<br>
+																<input type="checkbox" name="checkbox[]" value="">Wednesdat
+																<br>
+																<input type="checkbox" name="checkbox[]" value="">Thursday
+																<br>
+																<input type="checkbox" name="checkbox[]" value="">Fryday
+																<br>
+																<input type="checkbox" name="checkbox[]" value="">Saturday
+																<br>
+																<input type="checkbox" name="checkbox[]" value="">Sunday
+															</form>															
 														</div>
 													</div>
-													<div class="row-fluid">						
+													<div class="row">						
 														<div id="pnl-btn-cancel" class="col-sm-6 col-md-6 col-lg-6">
 															<button id="btn-cancel" type="button" class="btn btn-warning btn-md">Cancel</button>
 														</div>
@@ -177,6 +195,7 @@
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript" src="js/rides-add.js"></script>
 </div>
 </body>
 </html>

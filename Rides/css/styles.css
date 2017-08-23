@@ -14,12 +14,19 @@ b{
 div.panel.panel-default{
 	margin-top: 5%;
 }
+.image-login{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 3%;
+}
 .image{
 	text-align: center;
 	margin-top: 3%;
 }
 #img-login{
-	width:40%;
+	max-width:30%;
+	height: auto;
 }
 #box-register{
     border-radius: 4px;
@@ -44,7 +51,7 @@ label{
 .input-group {
     box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.21)!important;
 }
-#button {
+#btn-register {
     border: 1px solid #ccc;
     margin-top: 28px;
     padding: 6px 12px;
@@ -83,9 +90,34 @@ span.input-group-addon i {
 	text-align: right;
 	padding-right: 0px;
 }
+#welcome-rides-add{
+	margin-top: 2.5%;
+	text-align: right;
+	padding-right: 0px;	
+}
+#welcome-dashboard{
+	margin-top: 2.5%;
+	text-align: right;
+	padding-right: 0px;		
+}
+#welcome-rides-edit{
+	margin-top: 2.5%;
+	text-align: right;
+	padding-right: 0px;				
+}
+#welcome-settings{
+	margin-top: 2.5%;
+	text-align: right;
+	padding-right: 0px;	
+}
+#welcome-index{
+	margin-top: 2.5%;
+	text-align: right;
+	padding-right: 0px;	
+}
 .welcome-user{
 	color: #fff;
-	font-size:20px;
+	font-size:16px;
 	font-weight: bold;
 }
 .user-logged{
@@ -100,11 +132,14 @@ span.input-group-addon i {
 .main-image{
 	text-align: center;
 }
-#main-img{
+.main-img{
  	max-width: 12%;
 }
+.main-img-rides-add{
+	max-width: 10%;
+}
 @media screen and (max-width: 1080px) {
-    #main-img {
+    .main-img {
         max-width: 30%;
         margin-top: 5%;
     }
@@ -130,10 +165,10 @@ span.input-group-addon i {
 #dashboard-main{
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
     background: rgba(200, 200, 200, 0.1);
-	margin-top: 20%;
+	margin-top: 3%;
 	margin-bottom: 10%;
 	border-radius: 5px;
-	max-width: 80%;
+	max-width: 76%;
 }
 .title-db{
 	color:  #fff;
@@ -157,7 +192,8 @@ h4{
     background: rgba(200, 200, 200, 0.1);
 	margin-right: 2%;
 	margin-left: 2%;
-	margin-top: 5%;
+	margin-top: 3%;
+	padding-top: 3%;
 	margin-bottom: 2%;
 	height:20%; 
 	border-radius: 5px;
@@ -167,22 +203,25 @@ h2{
 	margin-bottom: 2%;
 }
 #dashboard-info{
-	margin-right: 2%;
-	margin-left: 2%;
-	margin-top: 22%;
+	margin-right: 0%;
+	margin-left: 0%;
+	margin-top:3%;
 	margin-bottom: 2%;
 	height:20%; 
-	border:1px solid #ccffcc;
-	border-radius: 5px;
+	/*border:1px solid #ccffcc;
+	border-radius: 5px;*/
+	
+	max-width:98%;
 }
+
 #dashboard-add{
 	text-align: right;
 	position: relative;
 }
-#main-head{
+.main-head{
 	margin-left: 1%;
 }
-span.glyphicon-th-list{
+label.glyphicon-th-list{
 	color: #fff;
 	font-weight: bold;
 	font-size: 16px;
@@ -214,7 +253,7 @@ tbody{
 #settings-main{
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
     background: rgba(200, 200, 200, 0.1);
-	margin-top: 20%;
+	margin-top: 5%;
 	margin-bottom: 10%;
 	border-radius: 5px;
 	max-width: 76%;
@@ -228,7 +267,7 @@ tbody{
 }
 #settings-info{
 	margin-right: 20%;
-	margin-top: 20%;
+	margin-top: 4%;
 	margin-left: 20%;
 	margin-bottom: 5%;
 	padding-bottom: 2%;
@@ -277,7 +316,7 @@ tbody{
 #rides-main{
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
     background: rgba(200, 200, 200, 0.1);
-	margin-top: 20%;
+	margin-top: 5%;
 	margin-bottom: 5%;
 	border-radius: 5px;
 	max-width: 76%;
@@ -285,7 +324,7 @@ tbody{
 }
 #rides-info{
 	background-color: #009edf;
-    margin-top: 20%;
+    margin-top: 4%;
 	margin-bottom: 5%;
 	border-radius: 5px;
 	max-width: 70%;
@@ -309,7 +348,7 @@ tbody{
 	margin-bottom: 2%;
 }
 #pnl-start-end{
-	margin-left: -15px;
+	margin-left: 28px;
 }
 
 #pnl-lbl-start{
@@ -338,6 +377,7 @@ tbody{
 
 #from{
 	margin-top: 1%;
+	margin-left: 2%;
 	color: #fff;
 	font-weight: bold;
 	font-size: 14px;
@@ -348,8 +388,8 @@ tbody{
 }
 #pnl-search{
 	margin-bottom: 4%;
-	margin-left: 8%;
-	text-align: center;
+	margin-left: 10%;
+	
 }
 
 #pnl-search-ride{
@@ -361,4 +401,30 @@ tbody{
 #lbl-criteria{
 	font-weight: bold;
 	font-size: 20px;
+	color: white;
+}
+
+#name-user{
+	color: white;
+}
+#name-user-rides-add{
+	color: white;
+}
+
+#user-log-out{
+	margin-top: 3%;
+	text-align: right;
+}
+
+.list-b{
+	color: black;
+}
+#pnl-time{
+	max-width: 200px;
+}
+
+#pnl-days{
+	margin-top: -35px;
+	margin-left: 20%;
+	text-align: justify-all;
 }

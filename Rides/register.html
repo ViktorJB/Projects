@@ -9,16 +9,16 @@
 </head>
 <body>
 <div class="container-fluid">
-	<div class="row-fluid">
-		<div id="box-register" class="col-sm-4 col-md-4 col-lg-4 col-md-offset-4">
+	<div class="row">
+		<div id="box-register" class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-md-offset-4">
 			<div class="image">
 				<img id="img-register" src="./img/share-car.png">
 			</div>
 			<div class="main-register main-center">
-				<form class="" method="post" action="#">
+				<form class="form">
 					<div class="form-group">
-						<label class="cols-sm-2">First Name</label>
-						<div class="cols-sm-10">
+						<label>First Name</label>
+						<div>
 							<div class="input-group">
 								<span class="input-group-addon"><i class="glyphicon glyphicon-user" aria-hidden="true"></i></span>
 								<input type="text" class="form-control" name="first-name" id="first-name" required="" />
@@ -26,8 +26,8 @@
 						</div>
 					</div>
 					<div class="form-group">
-						<label class="cols-sm-2">Last Name</label>
-						<div class="cols-sm-10">
+						<label>Last Name</label>
+						<div>
 							<div class="input-group">
 								<span class="input-group-addon"><i class="glyphicon glyphicon-user" aria-hidden="true"></i></span>
 								<input type="text" class="form-control" name="last-name" id="last-name" required="" />
@@ -35,8 +35,8 @@
 						</div>
 					</div>
 					<div class="form-group">
-						<label class="cols-sm-2 ">Phone Number</label>
-						<div class="cols-sm-10">
+						<label>Phone Number</label>
+						<div>
 							<div class="input-group">
 								<span class="input-group-addon"><i class="glyphicon glyphicon-phone" aria-hidden="true"></i></span>
 								<input type="text" class="form-control" name="phone-number" id="phone-number" required="" />
@@ -44,8 +44,8 @@
 						</div>
 					</div>
 					<div class="form-group">
-						<label class="cols-sm-2">Username</label>
-						<div class="cols-sm-10">
+						<label>Username</label>
+						<div>
 							<div class="input-group">
 								<span class="input-group-addon"><i class="glyphicon glyphicon-user" aria-hidden="true"></i></span>
 								<input type="text" class="form-control" name="user-name" id="user-name" required="" />
@@ -53,8 +53,8 @@
 						</div>
 					</div>
 					<div class="form-group">
-						<label class="cols-sm-2">Password</label>
-						<div class="cols-sm-10">
+						<label>Password</label>
+						<div>
 							<div class="input-group">
 								<span class="input-group-addon"><i class="glyphicon glyphicon-lock" aria-hidden="true"></i></span>
 								<input type="password" class="form-control" name="password" id="password" required="" />
@@ -62,16 +62,16 @@
 						</div>
 					</div>
 					<div class="form-group">
-						<label class="cols-sm-2">Confirm Password</label>
-						<div class="cols-sm-10">
+						<label>Confirm Password</label>
+						<div>
 							<div class="input-group">
 								<span class="input-group-addon"><i class="glyphicon glyphicon-lock" aria-hidden="true"></i></span>
 								<input type="password" class="form-control" name="confirm" id="confirm" required="" />
 							</div>
 						</div>
 					</div>
-					<div class="form-group ">
-						<a href="" target="_parent" type="button" class="btn btn-primary btn-lg btn-block login-button" id="button" >Register</a>
+					<div class="form-group last">
+						<input type="submit" class="btn btn-primary btn-lg btn-block login-button" id="btn-register" value="Register">
 					</div>
 					<div>
 						Already an user?<a class="login-here" href="login.html">&nbsp; Login here</a>
@@ -80,6 +80,7 @@
 			</div>
 		</div>
 	</div>
+	<script type="text/javascript" src="js/register.js"></script>
 </div>
 </body>
 </html>
