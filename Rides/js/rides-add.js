@@ -5,7 +5,7 @@ var days=[];
 var dayWeek;
 
 function loadUsers() {
-	debugger;
+
 	var usersLoad=JSON.parse(localStorage.getItem('sessionUser'));
 
 	  for (var i = 0; i < usersLoad.length; i++) {
@@ -42,20 +42,17 @@ function addRide(){
 }
 
 function getDays(){
-    debugger;
    var checkboxes = document.getElementById("days-list").checkbox;
     for (var x=0; x < checkboxes.length; x++) {
      if (checkboxes[x].checked) {
        days.push(checkboxes[x].value);
      }
     }
-
     dayWeek=days;
 }
 
 
 function bindEvents(){
-	debugger;
 	document.getElementById('welcome-rides-add').addEventListener("load", loadUsers());
 
     var saveButton=document.getElementById('btn-save');
